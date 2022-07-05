@@ -1,0 +1,7 @@
+after_script:
+  - R -e "sessionInfo()"
+
+run:
+  image: xlxs4/meta-analysis:latest
+  script:
+      - Rscript rma.R
